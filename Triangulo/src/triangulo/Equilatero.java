@@ -1,17 +1,21 @@
 package triangulo;
 
 public class Equilatero {
-	double lado, area, perimetro;
 	
-	void calcArea() {
-		area = ((lado * lado) * Math.sqrt(3)) / 4; 
-		
+	private double lado;
+	
+	public Equilatero(double lado) {
+		this.lado = lado;
+	}
+
+	public void calcArea() {
+		var area = ((lado * lado) * Math.sqrt(3)) / 4;
+		System.out.println("Area: " + area); 
 	}
 	
-	void calcPerimetro() {
-		perimetro = 3 * lado;
-		
+	public void calcPerimetro() {
+		var perimetro = 3 * lado;
+		System.out.println("Perimetro: " + perimetro);
 	}
-	
 
 }
