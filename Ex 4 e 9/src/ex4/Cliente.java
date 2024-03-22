@@ -1,4 +1,4 @@
-package ex4;
+package src.ex4;
 
 public class Cliente {
 
@@ -13,7 +13,7 @@ public class Cliente {
     }
 
     public void sacar(double valor) {
-        if (valor > this.saldo + this.limite) {
+        if (valor > (this.saldo + this.limite)) {
             System.out.println("Saldo insuficiente");
             return;
         }
